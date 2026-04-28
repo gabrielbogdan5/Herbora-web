@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#6BA368">
+<title>About – Herbora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #6BA368;
+  --green-light: #EBF4EA;
+  --green-mid: #4E8B4B;
+  --cream: #F5F3EA;
+  --cream-dark: #EDE9D8;
+  --brown: #4A3F35;
+  --brown-light: #7A6D62;
+  --white: #FFFFFF;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Nunito', 'Segoe UI', -apple-system, sans-serif;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(74,63,53,0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100%; width: 100%;
+  background: var(--cream);
+  font-family: var(--font-body);
+  color: var(--brown);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%; max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--cream);
+  box-shadow: 0 0 40px rgba(0,0,0,.10);
+}
+
+.header {
+  height: 58px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+  background: var(--white);
+  border-bottom: 1.5px solid var(--cream-dark);
+  position: sticky; top: 0; z-index: 20;
+}
+.header-title {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 600; color: var(--brown);
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+}
+.back-btn {
+  width: 40px; height: 40px; border: none; background: none;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; border-radius: 10px; transition: background .18s;
+  color: var(--green); text-decoration: none;
+}
+.back-btn:hover { background: var(--cream-dark); }
+
+.hero {
+  background: linear-gradient(160deg, #e8f5e7 0%, #d4ebd2 55%, #c2dfc0 100%);
+  padding: 36px 24px 28px;
+  text-align: center;
+  border-bottom: 1.5px solid var(--cream-dark);
+}
+.hero-logo {
+  width: 88px; height: 88px;
+  background: var(--white);
+  border-radius: 24px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px; line-height: 1;
+  box-shadow: 0 8px 32px rgba(107,163,104,.30);
+  margin: 0 auto 16px;
+}
+.hero-name {
+  font-family: var(--font-display);
+  font-size: 26px; font-weight: 600; color: var(--brown);
+  margin-bottom: 4px;
+}
+.hero-tagline {
+  font-size: 13px; color: var(--brown-light);
+  letter-spacing: .5px; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.version-badge {
+  display: inline-block;
+  background: var(--white);
+  color: var(--green-mid);
+  font-size: 12px; font-weight: 700;
+  padding: 5px 16px; border-radius: 99px;
+  box-shadow: 0 2px 8px rgba(107,163,104,.2);
+  letter-spacing: .3px;
+}
+
+.content { padding: 20px 20px 60px; }
+
+.section {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 16px; font-weight: 600;
+  color: var(--green-mid);
+  margin-bottom: 12px;
+}
+.section-body {
+  font-size: 14px; line-height: 1.75;
+  color: var(--brown);
+}
+.section-body p { margin-bottom: 10px; }
+.section-body p:last-child { margin-bottom: 0; }
+.section-body a { color: var(--green-mid); }
+
+.feature-list { list-style: none; padding: 0; }
+.feature-list li {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--cream-dark);
+  font-size: 14px; line-height: 1.5;
+}
+.feature-list li:last-child { border-bottom: none; padding-bottom: 0; }
+.feature-list li .fi { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+
+.stats-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px; margin-top: 4px;
+}
+.stat-card {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 14px 8px;
+  text-align: center;
+}
+.stat-num {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 600;
+  color: var(--green-mid);
+}
+.stat-label { font-size: 11px; color: var(--brown-light); margin-top: 2px; }
+
+.contact-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  background: var(--green);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 15px; font-weight: 700;
+  padding: 14px 20px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  margin-top: 14px;
+  transition: background .18s, transform .18s;
+  box-shadow: 0 4px 14px rgba(107,163,104,.30);
+}
+.contact-btn:hover, .contact-btn:active {
+  background: var(--green-mid);
+  transform: translateY(-1px);
+}
+
+.links-row { display: flex; flex-direction: column; }
+.link-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--cream-dark);
+  text-decoration: none;
+  color: var(--brown);
+  font-size: 14px; font-weight: 600;
+  transition: color .15s;
+}
+.link-item:last-child { border-bottom: none; }
+.link-item:hover { color: var(--green-mid); }
+.link-item .li-left { display: flex; align-items: center; gap: 10px; }
+
+.footer {
+  text-align: center;
+  padding: 16px 20px 48px;
+  font-size: 12px;
+  color: var(--brown-light);
+  line-height: 1.8;
+}
+.footer .made { font-size: 14px; color: var(--brown); margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <a class="back-btn" onclick="history.back()" href="#">←</a>
+    <div class="header-title">About the App</div>
+    <div style="width:40px;"></div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-logo">🌿</div>
+    <div class="hero-name">Herbora</div>
+    <div class="hero-tagline">Natural Healing Guide</div>
+    <span class="version-badge">Version 1.0.0</span>
+  </div>
+
+  <div class="content">
+
+    <div class="section">
+      <div class="section-title">🌱 What is Herbora?</div>
+      <div class="section-body">
+        <p>Herbora is a beautifully crafted mobile-first web application dedicated to the world of medicinal herbs and natural remedies. It brings together centuries of plant-based healing wisdom in a clean, accessible format.</p>
+        <p>Whether you're a herbalism enthusiast, a curious learner, or someone looking for natural wellness guidance, Herbora is your pocket companion for the plant kingdom.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📊 By the Numbers</div>
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-num">20+</div>
+          <div class="stat-label">Herbs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">50+</div>
+          <div class="stat-label">Remedies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Languages</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">✨ Features</div>
+      <ul class="feature-list">
+        <li><span class="fi">🌿</span><span>Herb Library with detailed profiles — uses, preparation, dosage &amp; warnings</span></li>
+        <li><span class="fi">💊</span><span>Natural Remedies organized by health category</span></li>
+        <li><span class="fi">📅</span><span>Leacul Zilei — a daily featured herb or remedy</span></li>
+        <li><span class="fi">❤️</span><span>Save your favorite herbs and remedies</span></li>
+        <li><span class="fi">🔍</span><span>Instant search across all content</span></li>
+        <li><span class="fi">🌍</span><span>Full Romanian &amp; English language support</span></li>
+        <li><span class="fi">🌙</span><span>Dark Mode for comfortable night reading</span></li>
+        <li><span class="fi">📱</span><span>PWA — installable on Android &amp; iOS</span></li>
+        <li><span class="fi">🔒</span><span>100% private — no data collection, no accounts</span></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🎯 Our Mission</div>
+      <div class="section-body">
+        <p>We believe that knowledge about medicinal plants should be freely accessible to everyone. Herbora is built as an open-source project with no paywalls, no ads, and no tracking — just pure, honest information.</p>
+        <p>Our goal is to help people reconnect with nature's pharmacy while always encouraging responsible use and professional medical guidance.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📄 Legal</div>
+      <div class="links-row">
+        <a class="link-item" href="terms-and-conditions.html">
+          <span class="li-left"><span>📋</span> Terms &amp; Conditions</span>
+          <span style="color:var(--brown-light);">›</span>
+        </a>
+        <a class="link-item" href="privacy-policy.html">
+          <span class="li-left"><span>🔒</span> Privacy Policy</span>
+          <span style="color:var(--brown-light);">›</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📬 Get in Touch</div>
+      <div class="section-body">
+        <p>Have feedback, suggestions, or questions? We'd love to hear from you!</p>
+      </div>
+      <a class="contact-btn" href="mailto:herbora.contact.info@gmail.com">
+        ✉️ herbora.contact.info@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <div class="made">Made with 💚 and a love for nature</div>
+    <div>🌿 Herbora – Natural Healing Guide</div>
+    <div>© 2026 Herbora. All rights reserved.</div>
+  </div>
+
+</div>
+</body>
+</html>

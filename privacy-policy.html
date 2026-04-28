@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#6BA368">
+<title>Privacy Policy – Herbora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #6BA368;
+  --green-light: #EBF4EA;
+  --green-mid: #4E8B4B;
+  --cream: #F5F3EA;
+  --cream-dark: #EDE9D8;
+  --brown: #4A3F35;
+  --brown-light: #7A6D62;
+  --white: #FFFFFF;
+  --red-soft: #FFF0EE;
+  --red-text: #C0392B;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Nunito', 'Segoe UI', -apple-system, sans-serif;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(74,63,53,0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100%; width: 100%;
+  background: var(--cream);
+  font-family: var(--font-body);
+  color: var(--brown);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%; max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--cream);
+  box-shadow: 0 0 40px rgba(0,0,0,.10);
+}
+
+.header {
+  height: 58px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+  background: var(--white);
+  border-bottom: 1.5px solid var(--cream-dark);
+  position: sticky; top: 0; z-index: 20;
+}
+.header-title {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 600; color: var(--brown);
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+}
+.back-btn {
+  width: 40px; height: 40px; border: none; background: none;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; border-radius: 10px; transition: background .18s;
+  color: var(--green); text-decoration: none;
+}
+.back-btn:hover { background: var(--cream-dark); }
+
+.hero {
+  background: linear-gradient(135deg, #e8f5e7 0%, #d4ebd2 100%);
+  padding: 32px 24px 24px;
+  text-align: center;
+  border-bottom: 1.5px solid var(--cream-dark);
+}
+.hero-icon { font-size: 52px; margin-bottom: 12px; }
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 600; color: var(--brown);
+  margin-bottom: 6px;
+}
+.hero-sub { font-size: 13px; color: var(--brown-light); }
+
+.content { padding: 24px 20px 60px; }
+
+.section {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 16px; font-weight: 600;
+  color: var(--green-mid);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-body {
+  font-size: 14px; line-height: 1.75;
+  color: var(--brown);
+}
+.section-body p { margin-bottom: 10px; }
+.section-body p:last-child { margin-bottom: 0; }
+.section-body ul { padding-left: 18px; margin-top: 6px; margin-bottom: 10px; }
+.section-body ul li { margin-bottom: 6px; }
+.section-body a { color: var(--green-mid); }
+
+/* Highlight pill */
+.pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.pill {
+  background: var(--green-light);
+  color: var(--green-mid);
+  font-size: 12px; font-weight: 700;
+  padding: 5px 12px; border-radius: 99px;
+  letter-spacing: .3px;
+}
+
+/* Good news box */
+.good-box {
+  background: var(--green-light);
+  border-left: 4px solid var(--green);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.good-box .good-title {
+  font-size: 13px; font-weight: 700;
+  color: var(--green-mid); letter-spacing: .4px;
+  margin-bottom: 8px;
+  display: flex; align-items: center; gap: 6px;
+}
+.good-box p { font-size: 13px; line-height: 1.65; color: var(--brown); }
+
+.footer {
+  text-align: center;
+  padding: 16px 20px 40px;
+  font-size: 12px;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+.footer a { color: var(--green-mid); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="header">
+    <a class="back-btn" onclick="history.back()" href="#">←</a>
+    <div class="header-title">Privacy Policy</div>
+    <div style="width:40px;"></div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-icon">🔒</div>
+    <div class="hero-title">Privacy Policy</div>
+    <div class="hero-sub">Last updated: April 2026</div>
+  </div>
+
+  <div class="content">
+
+    <!-- Good news -->
+    <div class="good-box">
+      <div class="good-title">✅ Good news — your privacy is fully protected</div>
+      <p>Herbora does not collect, store, or transmit any personal data. All your preferences and favorites are stored locally on your device only.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="section">
+      <div class="section-title">1. 📋 Overview</div>
+      <div class="section-body">
+        <p>This Privacy Policy describes how Herbora ("we", "us", or "our") handles information in connection with your use of the Herbora application.</p>
+        <p>We are committed to protecting your privacy. Herbora is built with a privacy-first approach — the App functions entirely offline and without any user account system.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section">
+      <div class="section-title">2. 📦 Data We Do NOT Collect</div>
+      <div class="section-body">
+        <p>We do not collect any of the following:</p>
+        <ul>
+          <li>Personal identifiers (name, email, phone number)</li>
+          <li>Location data</li>
+          <li>Device identifiers or advertising IDs</li>
+          <li>Usage analytics or crash reports</li>
+          <li>Health or medical data you view in the App</li>
+          <li>Contacts, camera, microphone, or any sensor data</li>
+        </ul>
+        <div class="pill-row">
+          <span class="pill">🚫 No accounts</span>
+          <span class="pill">🚫 No tracking</span>
+          <span class="pill">🚫 No analytics</span>
+          <span class="pill">🚫 No ads</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="section">
+      <div class="section-title">3. 💾 Local Storage</div>
+      <div class="section-body">
+        <p>Herbora stores certain data <strong>locally on your device only</strong> using your browser's localStorage. This includes:</p>
+        <ul>
+          <li>Your selected language preference (Romanian / English)</li>
+          <li>Your saved favorite herbs and remedies</li>
+          <li>Dark mode preference</li>
+        </ul>
+        <p>This data never leaves your device and is not accessible to us or any third party. You can clear it at any time by clearing your browser's site data.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="section">
+      <div class="section-title">4. 🌐 Third-Party Services</div>
+      <div class="section-body">
+        <p>Herbora loads fonts from <strong>Google Fonts</strong> (fonts.googleapis.com). This is a standard CDN request and may result in Google receiving your IP address as part of the standard HTTP request.</p>
+        <p>We do not use any third-party analytics, advertising, or tracking services.</p>
+        <p>The App does not make any other external network requests.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section">
+      <div class="section-title">5. 👶 Children's Privacy</div>
+      <div class="section-body">
+        <p>Herbora does not knowingly collect any information from children under the age of 13. The App contains no user accounts or data submission mechanisms, so no data from any user — of any age — is collected.</p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section">
+      <div class="section-title">6. 🔄 Changes to This Policy</div>
+      <div class="section-body">
+        <p>We may update this Privacy Policy from time to time. Any changes will be reflected within the App and on the GitHub repository. The "last updated" date at the top of this page will be revised accordingly.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section">
+      <div class="section-title">7. 📬 Contact Us</div>
+      <div class="section-body">
+        <p>If you have any questions or concerns about this Privacy Policy, please reach out to us:</p>
+        <p><a href="mailto:herbora.contact.info@gmail.com">herbora.contact.info@gmail.com</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>🌿 Herbora – Natural Healing Guide</p>
+    <p>© 2026 Herbora. All rights reserved.</p>
+    <p style="margin-top:6px;"><a href="terms-and-conditions.html">Terms & Conditions</a> · <a href="about.html">About the App</a></p>
+  </div>
+
+</div>
+</body>
+</html>

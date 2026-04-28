@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#6BA368">
+<title>Terms & Conditions – Herbora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --green: #6BA368;
+  --green-light: #EBF4EA;
+  --green-mid: #4E8B4B;
+  --cream: #F5F3EA;
+  --cream-dark: #EDE9D8;
+  --brown: #4A3F35;
+  --brown-light: #7A6D62;
+  --white: #FFFFFF;
+  --red-soft: #FFF0EE;
+  --red-text: #C0392B;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Nunito', 'Segoe UI', -apple-system, sans-serif;
+  --radius: 14px;
+  --shadow: 0 2px 12px rgba(74,63,53,0.10);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100%; width: 100%;
+  background: var(--cream);
+  font-family: var(--font-body);
+  color: var(--brown);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: 100%; max-width: 430px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  background: var(--cream);
+  box-shadow: 0 0 40px rgba(0,0,0,.10);
+}
+
+/* Header */
+.header {
+  height: 58px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 16px;
+  background: var(--white);
+  border-bottom: 1.5px solid var(--cream-dark);
+  position: sticky; top: 0; z-index: 20;
+}
+.header-title {
+  font-family: var(--font-display);
+  font-size: 18px; font-weight: 600; color: var(--brown);
+  position: absolute; left: 50%; transform: translateX(-50%);
+  white-space: nowrap;
+}
+.back-btn {
+  width: 40px; height: 40px; border: none; background: none;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  font-size: 22px; border-radius: 10px; transition: background .18s;
+  color: var(--green); text-decoration: none;
+}
+.back-btn:hover { background: var(--cream-dark); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #e8f5e7 0%, #d4ebd2 100%);
+  padding: 32px 24px 24px;
+  text-align: center;
+  border-bottom: 1.5px solid var(--cream-dark);
+}
+.hero-icon { font-size: 52px; margin-bottom: 12px; }
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 22px; font-weight: 600; color: var(--brown);
+  margin-bottom: 6px;
+}
+.hero-sub { font-size: 13px; color: var(--brown-light); }
+
+/* Content */
+.content { padding: 24px 20px 60px; }
+
+.section {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin-bottom: 16px;
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: 16px; font-weight: 600;
+  color: var(--green-mid);
+  margin-bottom: 10px;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-body {
+  font-size: 14px; line-height: 1.75;
+  color: var(--brown);
+}
+.section-body p { margin-bottom: 10px; }
+.section-body p:last-child { margin-bottom: 0; }
+.section-body ul {
+  padding-left: 18px; margin-top: 6px; margin-bottom: 10px;
+}
+.section-body ul li { margin-bottom: 6px; }
+.section-body a { color: var(--green-mid); }
+
+/* Warning box */
+.warn-box {
+  background: var(--red-soft);
+  border-left: 4px solid var(--red-text);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+}
+.warn-box .warn-title {
+  font-size: 13px; font-weight: 700;
+  color: var(--red-text); letter-spacing: .4px;
+  margin-bottom: 8px;
+  display: flex; align-items: center; gap: 6px;
+}
+.warn-box p { font-size: 13px; line-height: 1.65; color: var(--brown); }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 16px 20px 40px;
+  font-size: 12px;
+  color: var(--brown-light);
+  line-height: 1.6;
+}
+.footer a { color: var(--green-mid); }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <a class="back-btn" onclick="history.back()" href="#">←</a>
+    <div class="header-title">Terms & Conditions</div>
+    <div style="width:40px;"></div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-icon">📋</div>
+    <div class="hero-title">Terms & Conditions</div>
+    <div class="hero-sub">Last updated: April 2026</div>
+  </div>
+
+  <div class="content">
+
+    <!-- Important Notice -->
+    <div class="warn-box">
+      <div class="warn-title">📢 Important Notice</div>
+      <p>Herbora is an informational application only. Nothing in this app constitutes medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional.</p>
+    </div>
+
+    <!-- 1 -->
+    <div class="section">
+      <div class="section-title">1. 📖 Acceptance of Terms</div>
+      <div class="section-body">
+        <p>By accessing or using the Herbora application ("the App"), you agree to be bound by these Terms and Conditions. If you do not agree with any part of these terms, please do not use the App.</p>
+        <p>These terms apply to all visitors, users, and others who access or use the App.</p>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="section">
+      <div class="section-title">2. 🌿 Purpose of the App</div>
+      <div class="section-body">
+        <p>Herbora is designed to provide general educational information about medicinal herbs, natural remedies, and traditional plant-based wellness practices.</p>
+        <p>The App is <strong>not</strong> intended to:</p>
+        <ul>
+          <li>Diagnose, treat, cure, or prevent any disease or medical condition</li>
+          <li>Replace professional medical advice, diagnosis, or treatment</li>
+          <li>Serve as a substitute for consultation with a licensed healthcare provider</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="section">
+      <div class="section-title">3. ⚠️ Medical Disclaimer</div>
+      <div class="section-body">
+        <p>The information provided in Herbora is for general informational and educational purposes only. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+        <p>Never disregard professional medical advice or delay in seeking it because of something you have read in this App. Herbora does not recommend or endorse any specific tests, physicians, products, procedures, or other information.</p>
+        <p>Certain herbs may interact with medications, have contraindications, or be harmful if used improperly. Use information from this App at your own risk.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="section">
+      <div class="section-title">4. 🔒 Intellectual Property</div>
+      <div class="section-body">
+        <p>All content within Herbora — including text, design, graphics, and data — is the property of the Herbora development team and is protected by applicable intellectual property laws.</p>
+        <p>You may not reproduce, distribute, modify, or create derivative works without prior written permission.</p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="section">
+      <div class="section-title">5. 📵 Prohibited Uses</div>
+      <div class="section-body">
+        <p>You agree not to use the App to:</p>
+        <ul>
+          <li>Violate any applicable laws or regulations</li>
+          <li>Transmit harmful, offensive, or disruptive content</li>
+          <li>Attempt to gain unauthorized access to any systems</li>
+          <li>Scrape, copy, or redistribute content without permission</li>
+          <li>Use the App for commercial purposes without our written consent</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="section">
+      <div class="section-title">6. 🔄 Changes to Terms</div>
+      <div class="section-body">
+        <p>We reserve the right to update these Terms and Conditions at any time. Changes will be posted within the App and on our GitHub repository. Continued use of the App after changes constitutes your acceptance of the new terms.</p>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="section">
+      <div class="section-title">7. 📬 Contact</div>
+      <div class="section-body">
+        <p>If you have any questions about these Terms & Conditions, please contact us at:</p>
+        <p><a href="mailto:herbora.contact.info@gmail.com">herbora.contact.info@gmail.com</a></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>🌿 Herbora – Natural Healing Guide</p>
+    <p>© 2026 Herbora. All rights reserved.</p>
+    <p style="margin-top:6px;"><a href="privacy-policy.html">Privacy Policy</a> · <a href="about.html">About the App</a></p>
+  </div>
+
+</div>
+</body>
+</html>
